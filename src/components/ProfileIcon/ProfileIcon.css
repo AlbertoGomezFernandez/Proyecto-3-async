@@ -1,0 +1,6 @@
+.profile, .profile > img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.searchBar {
+  width: 100%;
+  height: 30px;
+  border-radius: 14px;
+  border: 0;
+  padding-left: 30px;
+  color: #a2a0a0;
+  -webkit-text-fill-color: #a2a0a0;
+}

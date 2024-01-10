@@ -26,7 +26,6 @@ const getPhotoList = async () => {
 
 const photoArray = await getPhotoList();
 
-console.log(photoArray);
 
 
 ProfileIcon({ parentNode: divHeader, url: "../src/assets/Pinterest-logo.png" });

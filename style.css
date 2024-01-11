@@ -45,6 +45,11 @@ footer{
   text-align: center;
 }
 
+.pNoFound{
+  height: 80vh;
+ padding-top: 100px;
+}
+
 @media (max-width: 600px) {
   .Button{
     display: none;

@@ -29,9 +29,9 @@ const photoArray = await getPhotoList();
 
 
 ProfileIcon({ parentNode: divHeader, url: "../src/assets/Pinterest-logo.png" });
-Button({ parentNode: divHeader, textColor: "white", bgColor: "black", text: "Inicio" });
-Button({ parentNode: divHeader, textColor: "black", bgColor: "white", text: "Hoy" });
-Button({ parentNode: divHeader, textColor: "black", bgColor: "white", text: "Crear" });
+Button({ parentNode: divHeader, textColor: "white", bgColor: "black", text: "Start" });
+Button({ parentNode: divHeader, textColor: "black", bgColor: "white", text: "Today" });
+Button({ parentNode: divHeader, textColor: "black", bgColor: "white", text: "Create" });
 SearchBar({ parentNode: divHeader, bgColor: "#a2a0a0" });
 ProfileIcon({ parentNode: divHeader, url: "../src/assets/campana.svg" });
 ProfileIcon({ parentNode: divHeader, url: "../src/assets/sobre.svg" });
@@ -63,6 +63,12 @@ inputElement.addEventListener("input", (e) => {
       img.classList.remove("hidden");
     } else {
       img.classList.add("hidden");
+      if (i === 0 && !document.querySelector(".pNoFound")) {
+        const pNoFound = document.createElement("p");
+        pNoFound.className = "pNoFound";
+        pNoFound.innerText = "There is no photo with this description";
+        divMain.appendChild(pNoFound);
+      }
     }
   });
 });
